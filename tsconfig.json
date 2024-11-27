@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",                      // Use ES2022 as the target for compatibility with modern JS features
+      "lib": ["ES2023"],                       // Use ES2023 library for the latest features and APIs
+      "module": "ESNext",                      // Use ESNext module system to support dynamic imports and other ESNext features
+      "skipLibCheck": true,                    // Skip checking library files to speed up compilation
+      "moduleResolution": "bundler",           // Set to "bundler" for bundler environments like Vite
+      "allowImportingTsExtensions": true,      // Allows importing TypeScript files without extensions
+      "isolatedModules": true,                 // Ensures each file is treated as an isolated module
+      "moduleDetection": "force",              // Forces the use of ES module resolution
+      "noEmit": true,                          // Prevent emitting compiled JavaScript files (useful when using Vite)
+      
+      /* Strict settings */
+      "strict": true,                          // Enable strict type checking options
+      "noUnusedLocals": true,                  // Disallow unused locals to catch potential issues
+      "noUnusedParameters": true,              // Disallow unused function parameters
+      "noFallthroughCasesInSwitch": true,      // Ensure all cases in switch statements are handled
+      
+      /* Optional settings for compatibility */
+      "esModuleInterop": true,                 // Enables interop with CommonJS modules, if needed
+      "resolveJsonModule": true,               // Allow importing JSON files as modules
+      "skipDefaultLibCheck": true,             // Skip checking the default library files
+      "forceConsistentCasingInFileNames": true // Enforce consistent casing for file names
+    },
+    "include": ["vite.config.ts"]              // Include TypeScript configuration for Vite
+  }
+  
